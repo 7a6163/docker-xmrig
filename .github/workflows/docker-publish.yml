@@ -3,8 +3,8 @@ name: ci
 on:
   push:
     branches:
-    - master
-       runs-on: ubuntu-latest
+    - main
+
 jobs:
  main:
    runs-on: ubuntu-latest
