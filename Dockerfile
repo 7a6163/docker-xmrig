@@ -14,7 +14,6 @@ RUN apk --no-cache add \
       cmake -DCMAKE_BUILD_TYPE=Release . && \
       make
 
-
 FROM alpine:latest
 RUN apk --no-cache add tini libuv hwloc
 RUN adduser -S -D -H -h /xmrig miner
