@@ -8,7 +8,7 @@ RUN apk --no-cache add \
         libc-dev \
         linux-headers \
         build-base && \
-      git clone https://github.com/xmrig/xmrig && \
+      git clone --depth=1 https://github.com/xmrig/xmrig && \
       cd xmrig && \
       mkdir build && \
       cmake -DCMAKE_BUILD_TYPE=Release . && \
